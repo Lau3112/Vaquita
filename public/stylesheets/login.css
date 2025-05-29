@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 320px;
+    text-align: center;
+  }
+  .login-container h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+  .input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+  }
+  label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #d9d9d9;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.35);
+    outline: none;
+  }
+  button {
+    width: 100%;
+    padding: 12px 0;
+    background: #7b6ff7;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgb(123 111 247 / 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  button:hover {
+    background: #9e91f9;
+    box-shadow: 0 6px 20px rgb(158 145 249 / 0.75);
+  }
+  .footer-text {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #d0cde1;
+  }
+  .footer-text a {
+    color: #9e91f9;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .footer-text a:hover {
+    text-decoration: underline;
+  }

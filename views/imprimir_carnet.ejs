@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carnet de Identificación</title>
+  <link rel="stylesheet" href="stylesheets/imprimir.css">
+</head>
+&nbsp;
+&nbsp;
+
+<body>
+  <main aria-label="Carnet de identificación" class="carnet">
+    <section class="datos" role="region" aria-labelledby="tituloDatos">
+      <h2 id="tituloDatos">Datos Personales</h2>
+      <div class="dato"><label>Nombre:</label><span><%= nombre %></span></div>
+      <div class="dato"><label>Cédula/Rif:</label><span><%= cedulaRif %></span></div>
+      <div class="dato"><label>Fundo:</label><span><%= fundo %></span></div>
+      <div class="dato"><label>Municipio:</label><span><%= municipio %></span></div>
+      <div class="dato"><label>Entidad Federal:</label><span><%= entidadFederal %></span></div>
+      <div class="dato"><label>Número de Región:</label><span><%= numRegion %></span></div>
+      <div class="dato"><label>Año:</label><span><%= anio %></span></div>
+      <div class="dato"><label>Número de Folios:</label><span><%= numFolios %></span></div>
+      <div class="dato"><label>Número de Libros:</label><span><%= numLibros %></span></div>
+      <div class="dato"><label>Uso del hierro:</label><span><%= usoHierro %></span></div>
+    </section>
+&nbsp;
+&nbsp;
+
+    <section class="foto-area" aria-label="Fotos y diseño">
+      <img 
+        src="<%= fotoPersona %>" 
+        alt="Foto de <%= nombre %>" 
+        class="foto-principal" 
+        loading="lazy" 
+      />
+&nbsp;
+&nbsp;
+
+      <div class="fotos-secundarias" aria-label="Diseño bajo, firma y sello">
+        <img 
+          src="<%= fotoDisenoBajo %>" 
+          alt="Diseño bajo" 
+          class="foto-secundaria" 
+          loading="lazy" 
+        />
+        <img 
+          src="<%= fotoFirma %>" 
+          alt="Firma" 
+          class="foto-secundaria" 
+          loading="lazy" 
+        />
+        <img 
+          src="<%= fotoSello %>" 
+          alt="Sello" 
+          class="foto-secundaria" 
+          loading="lazy" 
+        />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+&nbsp;
+&nbsp;

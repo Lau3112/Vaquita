@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+<body>
+  <div class="login-container" role="main" aria-label="Formulario de acceso">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm" aria-describedby="loginHelp">
+      <div class="input-group">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" name="username" placeholder="Usuario" required autocomplete="username"/>
+      </div>
+      <div class="input-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required autocomplete="current-password" />
+      </div>
+      <button type="submit" aria-label="Enviar datos para iniciar sesión">Entrar</button>
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Simulación de validación sencilla
+      const username = loginForm.username.value.trim();
+      const password = loginForm.password.value.trim();
+
+      if (username === "" || password === "") {
+        alert('Por favor, rellena todos los campos.');
+        return;
+      }
+      // Mostrar mensaje de éxito (en sitio real aquí iría la lógica para autenticación)
+      alert('¡Un placer verte de nuevo ' + username + '!');
+      loginForm.reset();
+    });
+  </script>
+</body>
+</html>
